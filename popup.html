@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+	<head>
+		<title>TP's Brainwallet</title>
+		<style>
+			body {
+				min-width: 500px;
+				overflow-x: hidden;
+			}
+			table
+			{
+				text-align:center
+			}
+			p.hidden {display:none;}
+		</style>
+		<script src="popup.js"></script>
+	</head>
+	<body>
+		<div align="center"><a href= "bitcoin:1GppqijVVTfgpptgzmUZXo61mgs1y8BXTQ?amount=0.1&label=TP's Bitcoin Scourer donation">1GppqijVVTfgpptgzmUZXo61mgs1y8BXTQ</a></div>
+		<div>
+			<p class="hidden" align="center" id="notice" style="color:red;">Notice</p>
+			<table border="1" width="600">
+				<tr>
+					<td>Passphrase</td>
+					<td><input type="text" id="passphrase" value="correct horse battery staple" size=70></input></td>
+				</tr>
+				<tr>
+					<td colspan="2">Compressed<input type="checkbox" id="compressed" value="compressed" checked="true"></input></td>
+				</tr>
+				<tr>
+					<td colspan="2">NetByte<input type="text" id="netbyte" size=2 value="00"></input></td>
+				</tr>
+				<tr>
+					<td colspan="2"><button id="compute">Compute</button></td>
+				</tr>
+				<tr>
+					<td>Private key</td>
+					<td id="privateKey">c4bbcb1fbec99d65bf59d85c8cb62ee2db963f0fe106f483d9afa73bd4e39a8a</td>
+				</tr>
+				<tr>
+					<td>WIF</td>
+					<td id="wif">L3p8oAcQTtuokSCRHQ7i4MhjWc9zornvpJLfmg62sYpLRJEyonLp</td>
+				</tr>
+				<tr>
+					<td>Public Key</td>
+					<td id="publicKey" style="word-wrap: break-word; max-width: 540px;">0378d430274f8c5ec1321338151e9f27f4c676a008bdf8638d07c0b6be9ab35c71</td>
+				</tr>
+				<tr>
+					<td>Hash160</td>
+					<td id="hash160">79fbfc3f34e7745860d76137da68f362380c606c</td>
+				</tr>
+				<tr>
+					<td>Address</td>
+					<td id="Address">1C7zdTfnkzmr13HfA2vNm5SJYRK6nEKyq8</td>
+				</tr>
+			</table>
+		</div>
+	</body>
+<script src="bitcoinjs-min.js"></script>
+<script src="BitcoinAddress.js"></script>
+<script src="MyMath.js"></script>
+<script src="Brainwallet.js"></script>
+</html>
+
